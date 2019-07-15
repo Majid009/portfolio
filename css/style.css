@@ -34,7 +34,7 @@ nav .navbar-nav li a{
 #about{
   padding-top: 60px;
   height: 100%;
-  background-image: url('./images/bg.jpg');
+  background-image: url('../images/bg.jpg');
   color: white;
   
 }
