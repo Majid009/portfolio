@@ -1,0 +1,133 @@
+
+body, html {
+  height: 100%;
+}
+
+/* ============== Navigation ============== */
+.navbar{
+  border: none;
+  background: transparent;
+}
+nav .navbar-nav li a{
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  }
+
+.navbar-right li a:hover {
+  color: #4834DF !important;
+  border-bottom:  1px solid white;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #4834DF;
+}
+
+/* ============== About Me ============== */
+#about{
+  padding-top: 60px;
+  height: 100%;
+  background-image: url('/images/bg.jpg');
+  color: white;
+  
+}
+
+.about_left{
+  text-align: center;
+  
+  padding: 10px 0px 0px 0px;
+}
+
+.about_left img{
+  display: block;
+  margin: auto;
+  background-color: gray;
+}
+
+.about_left p{
+  background: #4834DF;
+  color: white;
+  padding:10px;
+  margin: 0px;
+}
+.about_left p a {
+  margin: 10px;
+  color: white;
+}
+
+.about_left p a:hover {
+  color: black;
+}
+
+.about_right{
+ text-align: justify;
+  padding-left: 30px;
+  background: #000222;
+  padding: 20px;
+  border-radius: 5px;
+
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.about_right p{
+ font-size: 16px;
+ font-weight: normal;
+ text-align: left;
+}
+
+.about_right p b{
+  color: white;
+ }
+
+ /* ============ Skilss =================== */
+ #skills{
+   padding: 20px 0px 20px 0px;
+ }
+ #skills h1{
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 42px;
+ }
+
+ .skill{
+   text-align: center;
+   color: gray;
+   padding: 0px 0px 10px 0px;
+   margin-top: 10px;
+
+   /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+ }
+
+ .skill h2{
+  background: #4834DF;
+  color: white;
+  margin: 0px;
+  padding: 5px;
+ }
+
+ .skill ul{
+   list-style: none;
+   margin: 10px;
+ }
+
+ .skill ul li{   
+   font-size: 18px;
+   text-align: left;
+   font-weight: bold;
+   padding: 5px;
+ }
+
