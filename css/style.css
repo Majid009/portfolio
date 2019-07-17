@@ -42,7 +42,7 @@ nav .navbar-nav li a{
 .about_left{
   text-align: center;
   padding: 10px 0px 0px 0px;
-  opacity: 1;
+  opacity:1.0;
 }
 
 .about_left img{
@@ -71,7 +71,7 @@ nav .navbar-nav li a{
   padding-left: 30px;
   background: #000222;
   padding: 20px;
-  opacity: 1;
+  opacity:1.0;
 }
 
 
