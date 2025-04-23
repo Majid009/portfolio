@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majid Mehmood | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      text-align: center;
+    }
+    .projects .card,
+    .skills .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .projects .card:hover,
+    .skills .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .dark-mode .navbar,
+    .dark-mode .hero,
+    .dark-mode footer {
+      background-color: #1e1e1e;
+    }
+    .btn-primary {
+      background-color: #0069d9;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0053b3;
+    }
+    .skills .card-title i {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Majid Mehmood</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><button class="btn btn-sm btn-outline-dark ms-3" onclick="toggleDark()">🌓</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="about">
+  <div class="container pt-5 mt-5 text-center">
+    <img src="a.png" alt="Your Photo" class="img-fluid rounded-circle shadow mb-4" style="max-width: 180px;">
+    <h1 class="mb-3">Hello, I'm <strong>Majid Mehmood</strong></h1>
+    <p class="lead">Backend Developer(Django & Laravel) | Data Analyst</p>
+    <p>I’m a Computer Science graduate who builds scalable backend systems and analyzes data to drive decisions.</p>
+    <a href="resume.pdf" class="btn btn-primary btn-lg mt-3" download>
+      <i class="bi bi-download"></i> Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="py-5 skills bg-light" id="skills">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-server me-2"></i>Backend Development</h5>
+            <p class="card-text">Django, Laravel, REST APIs, MySQL, SQLite</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-graph-up-arrow me-2"></i>Data Analysis</h5>
+            <p class="card-text">Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Excel, SQL , Power BI, Tableau, Statistics</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-tools me-2"></i>Tools & Platforms</h5>
+            <p class="card-text">Git, GitHub, Postman, VS Code, Jupyter Notebook</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="projects py-5" id="projects">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <div class="card-body">
+            <h5 class="card-title">OLX Clone</h5>
+            <p class="card-text">A full-featured buy & sell platform built with Django & MySQL.</p>
+            <a href="https://github.com/yourusername/olx-clone" target="_blank" class="btn btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <div class="card-body">
+            <h5 class="card-title">Amazon Sales Analyzer</h5>
+            <p class="card-text">Tool to visualize and analyze Amazon sales data using Pandas.</p>
+            <a href="https://github.com/yourusername/amazon-analyzer" target="_blank" class="btn btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <div class="card-body">
+            <h5 class="card-title">Investigator's Dashboard</h5>
+            <p class="card-text">An internal dashboard to visualize and track investigation cases using charts and filters. Built with Django and Chart.js.</p>
+            <a href="https://github.com/yourusername/investigator-dashboard" target="_blank" class="btn btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Let's Connect</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="p-5 bg-white rounded-4 shadow-lg position-relative">
+          <div class="ribbon bg-primary text-white fw-bold px-4 py-2 rounded-pill position-absolute" style="top: -20px; left: 50%; transform: translateX(-50%);">Reach Me</div>
+          <div class="row text-center">
+            <div class="col-md-3 mb-4">
+              <div class="bg-light p-3 rounded h-100 overflow-hidden text-wrap">
+                <i class="bi bi-envelope-at fs-3 text-primary mb-2"></i>
+                <h6>Email</h6>
+                <p class="small"><a href="mailto:you@example.com" class="text-decoration-none">you@example.com</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="bg-light p-3 rounded h-100 overflow-hidden text-wrap">
+                <i class="bi bi-github fs-3 text-dark mb-2"></i>
+                <h6>GitHub</h6>
+                <p class="small"><a href="https://github.com/yourusername" target="_blank" class="text-decoration-none">github.com/yourusername</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="bg-light p-3 rounded h-100 overflow-hidden text-wrap">
+                <i class="bi bi-linkedin fs-3 text-primary mb-2"></i>
+                <h6>LinkedIn</h6>
+                <p class="small"><a href="https://linkedin.com/in/yourusername" target="_blank" class="text-decoration-none">linkedin.com/in/yourusername</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="bg-light p-3 rounded h-100 overflow-hidden text-wrap">
+                <i class="bi bi-whatsapp fs-3 text-success mb-2"></i>
+                <h6>WhatsApp</h6>
+                <p class="small"><a href="https://wa.me/1234567890" target="_blank" class="text-decoration-none">+123 456 7890</a></p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center mt-4">I'm always open to exciting projects and collaborations. Feel free to reach out!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Majid Mehmood. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  function toggleDark() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
